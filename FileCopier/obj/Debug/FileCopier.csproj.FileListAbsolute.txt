@@ -12,3 +12,10 @@ j:\work\drweb\FileCopier\FileCopier\bin\Debug\FileCopier.pdb
 j:\work\drweb\FileCopier\FileCopier\obj\Debug\FileCopier.csprojResolveAssemblyReference.cache
 j:\work\drweb\FileCopier\FileCopier\bin\Debug\log4net.dll
 j:\work\drweb\FileCopier\FileCopier\bin\Debug\log4net.xml
+d:\Work\Sla\drweb\FileCopier\FileCopier\bin\Debug\FileCopier.exe.config
+d:\Work\Sla\drweb\FileCopier\FileCopier\bin\Debug\FileCopier.exe
+d:\Work\Sla\drweb\FileCopier\FileCopier\bin\Debug\FileCopier.pdb
+d:\Work\Sla\drweb\FileCopier\FileCopier\bin\Debug\log4net.dll
+d:\Work\Sla\drweb\FileCopier\FileCopier\bin\Debug\log4net.xml
+d:\Work\Sla\drweb\FileCopier\FileCopier\obj\Debug\FileCopier.exe
+d:\Work\Sla\drweb\FileCopier\FileCopier\obj\Debug\FileCopier.pdb

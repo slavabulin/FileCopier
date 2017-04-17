@@ -3,14 +3,16 @@ using System.IO;
 using System.Xml.Serialization;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using FileCopier;
+using log4net;
+using log4net.Config;
 
 namespace FileCopierTests
 {
     [TestClass]
-    public class FileCopierTests
+    public class ConfigParserTests
     {
         [TestMethod]
-        public void ConfigParser_GetFilePath_WrongFilePath_shouldFail()
+        public void GetFilePath_WrongFilePath_shouldFail()
         {
             //Передадим на вход GetFilePath пустую строчку
             //должны получить исключение
@@ -28,7 +30,7 @@ namespace FileCopierTests
         }
 
         [TestMethod]
-        public void ConfigParser_GetFilePath_RightFilePath_shouldPass()
+        public void GetFilePath_RightFilePath_shouldPass()
         {
             //------------------------------------------
             //подготовим файл конфигурации, который дадим на вход ConfigParser
@@ -62,8 +64,7 @@ namespace FileCopierTests
             writer.Dispose();
             //------------------------------------------
 
-            ConfigParser parser = new ConfigParser();
-            
+            ConfigParser parser = new ConfigParser();            
 
             try
             {
@@ -91,12 +92,16 @@ namespace FileCopierTests
                     File.Delete("config.xml");
                 }
             }
-        }
+        }        
+    }
 
+    [TestClass]
+    public class FileManagerTests
+    {
         [TestMethod]
-        public void FileManager_CopyFile_RightPath_shouldPass()
+        public void CopyFile_RightPath_shouldPass()
         {
-            //создадим директории откуда, куда копировать и файл уоторый копировать
+            //создадим директории откуда, куда копировать и файл который копировать
             DirectoryInfo dirFrom = null, dirTo = null;
             FileStream fs = null;
             string filename = "file.txt";
@@ -107,7 +112,7 @@ namespace FileCopierTests
                 string copyTo = Guid.NewGuid().ToString();
                 dirFrom = Directory.CreateDirectory(copyFrom);
                 dirTo = Directory.CreateDirectory(copyTo);
-                
+
                 fs = File.Create(copyFrom + "/" + filename);
                 fs.Dispose();
                 FileData fileData = new FileData();
@@ -116,18 +121,20 @@ namespace FileCopierTests
                 fileData.paths[0].FileName = filename;
                 fileData.paths[0].From = copyFrom;
                 fileData.paths[0].To = copyTo;
+                
+                
                 //копируем, если возникают исключения - тест не пройден
                 try
                 {
                     FileManager mngr = new FileManager();
                     mngr.CopyFile(fileData.paths, true);
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     Assert.Fail();
                 }
             }
-                catch(Exception e)
+            catch (Exception)
             {
                 Assert.Fail();
             }

@@ -48,7 +48,7 @@ namespace FileCopier
                 catch (InvalidOperationException g)
                 {
                     Logger.Log.Error("Ошибка десериализации файла конфигурации - " + g.Message + "\n Выполнение программы прервано.");
-                    throw g;
+                    throw;
                 }
             }
             return fileData.paths;
