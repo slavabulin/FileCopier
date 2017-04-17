@@ -1,0 +1,22 @@
+2017-04-17 00:31:35,154  ERROR Ошибка копирования файла - |file.txt - Illegal characters in path.
+2017-04-17 00:31:35,155  ERROR Ошибка копирования файла - file.txt - Could not find file 'c:/\\file.txt'.
+2017-04-17 00:31:35,186  ERROR Ошибка копирования файла - file.txt - Could not find file 'c:/file.txt'.
+2017-04-17 00:31:35,166  ERROR Ошибка копирования файла - file.txt - Could not find file 'c:/file.txt'.
+2017-04-17 00:31:35,166  ERROR Ошибка копирования файла - file.txt - Could not find file 'c:/file.txt'.
+2017-04-17 00:31:35,180  ERROR Ошибка копирования файла - file.txt - Could not find file 'c:/file.txt'.
+2017-04-17 00:31:35,188  ERROR Ошибка копирования файла - file.txt - Could not find file 'c:/file.txt'.
+2017-04-17 00:31:35,186  ERROR Ошибка копирования файла - file.txt - Could not find file 'c:/file.txt'.
+2017-04-17 00:31:35,245  ERROR Ошибка копирования файла - file.txt - Could not find file 'c:/file.txt'.
+2017-04-17 00:31:47,093  ERROR Ошибка копирования файла - file.txt - The file 'd:/file.txt' already exists.
+2017-04-17 00:31:47,117  INFO  Выполнение программы завершено.
+2017-04-17 02:56:26,151  ERROR Ошибка копирования файла - file.txt - Could not find file 'c:/file.txt'.
+2017-04-17 02:56:26,152  ERROR Ошибка копирования файла - file.txt - Could not find file 'c:/file.txt'.
+2017-04-17 02:56:26,151  ERROR Ошибка копирования файла - file.txt - Could not find file 'c:/file.txt'.
+2017-04-17 02:56:26,153  ERROR Ошибка копирования файла - file.txt - Could not find file 'c:/file.txt'.
+2017-04-17 02:56:26,151  ERROR Ошибка копирования файла - file.txt - The file 'd:/file.txt' already exists.
+2017-04-17 02:56:26,152  ERROR Ошибка копирования файла - file.txt - Could not find file 'c:/file.txt'.
+2017-04-17 02:56:26,151  ERROR Ошибка копирования файла - file.txt - Could not find file 'c:/\\file.txt'.
+2017-04-17 02:56:26,154  ERROR Ошибка копирования файла - file.txt - Could not find file 'c:/file.txt'.
+2017-04-17 02:56:26,153  ERROR Ошибка копирования файла - |file.txt - Illegal characters in path.
+2017-04-17 02:56:26,180  ERROR Ошибка копирования файла - file.txt - Could not find file 'c:/file.txt'.
+2017-04-17 02:56:26,281  INFO  Выполнение программы завершено.
