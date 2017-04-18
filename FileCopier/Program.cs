@@ -23,7 +23,7 @@ namespace FileCopier
             //При запуске с ключом "-o" - программа перезаписывает уже существующие файлы.
             //При запуске без ключа не перезаписывает файл и пишет в лог ошибку, что такой файл уже существует.
             if (args.Contains("-o")) overwriteExistingFile = true;
-
+            Logger.Log.Info("Выполнение программы начато. Флаг перезаписи overwriteExistingFile = " + overwriteExistingFile.ToString());
             FileData.Path[] filePaths = new ConfigParser().GetFilePath(configPath);
             FileManager fileManager = new FileManager();
 
