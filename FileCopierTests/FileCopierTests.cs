@@ -11,10 +11,17 @@ namespace FileCopierTests
     [TestClass]
     public class ConfigParserTests
     {
+        [AssemblyCleanup]
+        public static void Cleanup()
+        {
+            TestLogger.Log.Info("Test execution ended.");
+        }
+
         [AssemblyInitialize]
         public static void Startup(TestContext tc)
         {
             TestLogger.InitLogger();
+            TestLogger.Log.Info("Test execution started.");
         }
         [TestMethod]
         public void GetFilePath_WrongFilePath_shouldFail()
@@ -33,7 +40,7 @@ namespace FileCopierTests
                 //если получили - тест пройден
                 return;
             }
-            TestLogger.Log.Info("GetFilePath_WrongFilePath_shouldFail  -  FAILED");
+            TestLogger.Log.Error("GetFilePath_WrongFilePath_shouldFail  -  FAILED");
             Assert.Fail();
         }
 
@@ -89,13 +96,13 @@ namespace FileCopierTests
                     
                 else
                 {
-                    TestLogger.Log.Info("GetFilePath_RightFilePath_shouldPass  -  FAILED");
+                    TestLogger.Log.Error("GetFilePath_RightFilePath_shouldPass  -  FAILED");
                     Assert.Fail();
                 }
             }
             catch (Exception)
             {
-                TestLogger.Log.Info("GetFilePath_RightFilePath_shouldPass  -  FAILED");
+                TestLogger.Log.Error("GetFilePath_RightFilePath_shouldPass  -  FAILED");
                 Assert.Fail();
             }
             finally
@@ -146,13 +153,13 @@ namespace FileCopierTests
                 }
                 catch (Exception)
                 {
-                    TestLogger.Log.Info("CopyFile_RightPath_shouldPass  -  FAILED");
+                    TestLogger.Log.Error("CopyFile_RightPath_shouldPass  -  FAILED");
                     Assert.Fail();
                 }
             }
             catch (Exception)
             {
-                TestLogger.Log.Info("CopyFile_RightPath_shouldPass  -  FAILED");
+                TestLogger.Log.Error("CopyFile_RightPath_shouldPass  -  FAILED");
                 Assert.Fail();
             }
             finally

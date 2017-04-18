@@ -7,3 +7,13 @@ d:\Work\Sla\drweb\FileCopier\FileCopierTests\bin\Debug\FileCopier.pdb
 d:\Work\Sla\drweb\FileCopier\FileCopierTests\bin\Debug\log4net.xml
 d:\Work\Sla\drweb\FileCopier\FileCopierTests\obj\Debug\FileCopierTests.dll
 d:\Work\Sla\drweb\FileCopier\FileCopierTests\obj\Debug\FileCopierTests.pdb
+d:\work\!Prog\repo\FileCopier.git\FileCopierTests\bin\Debug\FileCopierTests.dll.config
+d:\work\!Prog\repo\FileCopier.git\FileCopierTests\bin\Debug\FileCopierTests.dll
+d:\work\!Prog\repo\FileCopier.git\FileCopierTests\bin\Debug\FileCopierTests.pdb
+d:\work\!Prog\repo\FileCopier.git\FileCopierTests\bin\Debug\FileCopier.exe
+d:\work\!Prog\repo\FileCopier.git\FileCopierTests\bin\Debug\log4net.dll
+d:\work\!Prog\repo\FileCopier.git\FileCopierTests\bin\Debug\FileCopier.pdb
+d:\work\!Prog\repo\FileCopier.git\FileCopierTests\bin\Debug\log4net.xml
+d:\work\!Prog\repo\FileCopier.git\FileCopierTests\obj\Debug\FileCopierTests.csprojResolveAssemblyReference.cache
+d:\work\!Prog\repo\FileCopier.git\FileCopierTests\obj\Debug\FileCopierTests.dll
+d:\work\!Prog\repo\FileCopier.git\FileCopierTests\obj\Debug\FileCopierTests.pdb

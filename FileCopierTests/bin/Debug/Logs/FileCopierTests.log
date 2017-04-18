@@ -1,3 +1,12 @@
 [2017-04-18 04:38:57] - [INFO ] – GetFilePath_WrongFilePath_shouldFail  -  PASSED
 [2017-04-18 04:38:57] - [INFO ] – GetFilePath_RightFilePath_shouldPass  -  PASSED
 [2017-04-18 04:38:57] - [INFO ] – CopyFile_RightPath_shouldPass  -  PASSED
+[2017-04-18 04:44:49] - [INFO ] – GetFilePath_WrongFilePath_shouldFail  -  PASSED
+[2017-04-18 04:44:49] - [INFO ] – GetFilePath_RightFilePath_shouldPass  -  PASSED
+[2017-04-18 04:44:49] - [INFO ] – CopyFile_RightPath_shouldPass  -  PASSED
+[2017-04-18 04:44:49] - [INFO ] – Test execution ended.
+[2017-04-18 04:46:10] - [INFO ] – Test execution started.
+[2017-04-18 04:46:10] - [INFO ] – GetFilePath_WrongFilePath_shouldFail  -  PASSED
+[2017-04-18 04:46:10] - [INFO ] – GetFilePath_RightFilePath_shouldPass  -  PASSED
+[2017-04-18 04:46:10] - [INFO ] – CopyFile_RightPath_shouldPass  -  PASSED
+[2017-04-18 04:46:10] - [INFO ] – Test execution ended.

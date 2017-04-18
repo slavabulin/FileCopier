@@ -19,3 +19,10 @@ d:\Work\Sla\drweb\FileCopier\FileCopier\bin\Debug\log4net.dll
 d:\Work\Sla\drweb\FileCopier\FileCopier\bin\Debug\log4net.xml
 d:\Work\Sla\drweb\FileCopier\FileCopier\obj\Debug\FileCopier.exe
 d:\Work\Sla\drweb\FileCopier\FileCopier\obj\Debug\FileCopier.pdb
+d:\work\!Prog\repo\FileCopier.git\FileCopier\bin\Debug\FileCopier.exe.config
+d:\work\!Prog\repo\FileCopier.git\FileCopier\bin\Debug\FileCopier.exe
+d:\work\!Prog\repo\FileCopier.git\FileCopier\bin\Debug\FileCopier.pdb
+d:\work\!Prog\repo\FileCopier.git\FileCopier\bin\Debug\log4net.dll
+d:\work\!Prog\repo\FileCopier.git\FileCopier\bin\Debug\log4net.xml
+d:\work\!Prog\repo\FileCopier.git\FileCopier\obj\Debug\FileCopier.exe
+d:\work\!Prog\repo\FileCopier.git\FileCopier\obj\Debug\FileCopier.pdb
