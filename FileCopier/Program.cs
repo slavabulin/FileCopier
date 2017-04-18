@@ -37,19 +37,27 @@ namespace FileCopier
         public FileData.Path[] GetFilePath(string cfgFilePath)
         {
             FileData fileData = new FileData();
-
-            using (FileStream fs = new FileStream(cfgFilePath, FileMode.Open, FileAccess.Read, FileShare.Read))
+            try
             {
-                XmlSerializer xmlSerializer = new XmlSerializer(typeof(FileData));
-                try
+                using (FileStream fs = new FileStream(cfgFilePath, FileMode.Open, FileAccess.Read, FileShare.Read))
                 {
-                    fileData = (FileData)xmlSerializer.Deserialize(fs);
+                    XmlSerializer xmlSerializer = new XmlSerializer(typeof(FileData));
+                    try
+                    {
+                        fileData = (FileData)xmlSerializer.Deserialize(fs);
+                    }
+                    catch (InvalidOperationException g)
+                    {
+                        Logger.Log.Error("Ошибка десериализации файла конфигурации - " + g.Message + "\n Выполнение программы прервано.");
+                        System.Environment.Exit(-1);
+                    }                    
                 }
-                catch (InvalidOperationException g)
-                {
-                    Logger.Log.Error("Ошибка десериализации файла конфигурации - " + g.Message + "\n Выполнение программы прервано.");
-                    throw;
-                }
+                
+            }
+            catch(FileNotFoundException e)
+            {
+                Logger.Log.Error("Отсутствует файл конфигурации - " + e.Message + "\n Выполнение программы прервано.");
+                System.Environment.Exit(-1);
             }
             return fileData.paths;
         }
