@@ -26,3 +26,4 @@ d:\work\!Prog\repo\FileCopier.git\FileCopier\bin\Debug\log4net.dll
 d:\work\!Prog\repo\FileCopier.git\FileCopier\bin\Debug\log4net.xml
 d:\work\!Prog\repo\FileCopier.git\FileCopier\obj\Debug\FileCopier.exe
 d:\work\!Prog\repo\FileCopier.git\FileCopier\obj\Debug\FileCopier.pdb
+d:\work\!Prog\repo\FileCopier\FileCopier\bin\Debug\FileCopier.exe.config
